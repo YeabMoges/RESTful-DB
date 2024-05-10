@@ -9,7 +9,7 @@ dbname="zipcodes"
 engine = create_engine("mysql+pymysql://{user}:{pw}@{host}/{db}"
             .format(host=hostname, db=dbname, user=uname, pw=pwd))
 
-tables = pandas.read_csv(r"C:\Users\yeabx\PycharmProjects\RESTful-DB\zip_code_database.csv")
+tables = pandas.read_csv(r"csv\zip_code_database.csv")
 
 
 

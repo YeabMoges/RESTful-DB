@@ -9,7 +9,7 @@ dbname="states"
 engine = create_engine("mysql+pymysql://{user}:{pw}@{host}/{db}"
             .format(host=hostname, db=dbname, user=uname, pw=pwd))
 
-tables = pandas.read_csv(r"C:\Users\yeabx\PycharmProjects\RESTful-DB\database\Populationstate.csv")
+tables = pandas.read_csv(r"csv/Populationstate.csv")
 
 
 
