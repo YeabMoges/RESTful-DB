@@ -30,7 +30,7 @@ def searchzip(searchzip):
         return searchzip + " was not found"
     else:
         searched = cursor.fetchall()
-        return 'Success! Here you go: %s' % searched
+        return render_template('search_results.html', searchzip=searchzip, search_results=searched)
 
 #update zip database population for a specified zip
 @app.route('/updatezippop/<updateZIP> <updatePOP>')
@@ -46,7 +46,7 @@ def updatezippop(updateZIP, updatePOP):
         if test1 != 1:
             return updateZIP + "  failed to update"
         else:
-            return 'Population has been updated successfully for zip: %s' % updateZIP
+            return render_template('update_success.html', updateZIP=updateZIP)
 
 #update webpage
 @app.route('/update',methods = ['POST'])
