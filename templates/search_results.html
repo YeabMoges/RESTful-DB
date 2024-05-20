@@ -2,9 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007bff;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-
+    <div class="container">
+        <h1>Search Results for ZIP code: {{ searchzip }}</h1>
+        <ul>
+            {% for result in search_results %}
+                <li>ZIP code: {{ result[1] }} | Population: {{ result[2] }}</li>
+            {% endfor %}
+        </ul>
+        <p><a href="/">Return to Home Page</a></p>
+    </div>
 </body>
 </html>
