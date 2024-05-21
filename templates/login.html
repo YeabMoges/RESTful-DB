@@ -1,16 +1,71 @@
-<html>
-   <body>
-      <form action = "http://localhost:5000/search" method = "GET">
-         <p>Search:</p>
-         <p><input type = "text" name = "szip" /></p>
-         <p><input type = "submit" value = "submit" /></p>
-      </form>
-      <form action = "http://localhost:5000/update" method = "POST">
-          <p>Update Zip:</p>
-         <p><input type = "text" name = "uzip" /></p>
-          <p>Update Population:</p>
-         <p><input type = "text" name = "upop" /></p>
-         <p><input type = "submit" value = "submit" /></p>
-      </form>
-   </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search and Update Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        form p {
+            margin: 10px 0;
+        }
+        form input[type="text"] {
+            width: calc(100% - 22px); /* Adjusted width to fit smaller container */
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        form input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 8px 16px;
+            font-size: 14px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="http://localhost:5000/search" method="GET">
+            <p>Search:</p>
+            <p><input type="text" name="szip" placeholder="Enter ZIP code" /></p>
+            <p><input type="submit" value="Search" /></p>
+        </form>
+        <form action="http://localhost:5000/update" method="POST">
+            <p>Update Zip:</p>
+            <p><input type="text" name="uzip" placeholder="Enter ZIP code" /></p>
+            <p>Update Population:</p>
+            <p><input type="text" name="upop" placeholder="Enter population" /></p>
+            <p><input type="submit" value="Update" /></p>
+        </form>
+    </div>
+</body>
 </html>
