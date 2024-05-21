@@ -1,6 +1,6 @@
 # Zip Code Database RESTful Interface
 
-This project provides a RESTful interface for navigating and updating a Zip code database using Flask. It fetches data from a CSV file and displays it. The interface allows searching for populations by Zip code and updating Zip code details, with changes reflected in the database managed via PhpMyAdmin. The source code was adapted from another GitHub repository by ellisju37073.
+This project provides a RESTful interface for navigating and updating a Zip code database using Flask. It fetches data from a CSV file and displays it. The interface allows searching for populations by Zip code and updating Zip code details, with changes reflected in the database managed via PhpMyAdmin. The source code was adapted from another GitHub repository by [ellisju37073](https://github.com/ellisju37073/States).
 
 ## Features
 
@@ -20,7 +20,7 @@ This project provides a RESTful interface for navigating and updating a Zip code
 
 1. **Set Up WAMP Server**
 
-   - Download and install [WAMP Server](http://www.wampserver.com/en/).
+   - Download and install [WAMP Server](https://sourceforge.net/projects/wampserver/).
    - Ensure that Apache and MySQL services are running.
    - Access PhpMyAdmin via `http://localhost/phpmyadmin` to manage your MySQL databases.
 
