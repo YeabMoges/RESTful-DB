@@ -54,6 +54,14 @@ This project provides a RESTful interface for navigating and updating a Zip code
 
    Update the database configuration in your Flask application (`zipcodes.py`) with your MySQL credentials and database name.
 
+## Usage
+
+1. **Run the Flask Application**
+
+   Start the Flask application by running:
+   ```bash
+   python rest_web.py
+   ```
 
 ## Project Structure
 
