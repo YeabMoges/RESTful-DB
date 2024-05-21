@@ -1,11 +1,18 @@
+#Yeabsira Moges
+#CNE350
+#Spring 2024
+
 #Restful interface that has search and update options for navigating a Zip code database on Phpmyadmin.
 
 
 #https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
-#https://stackoverflow.com/questions/902408/how-to-use-variables-in-sql-zipment-in-python
+#https://stackoverflow.com/questions/902408/how-to-use-variables-in-sql-statement-in-python
 #https://stackoverflow.com/questions/1081750/python-update-multiple-columns-with-python-variables
 #https://stackoverflow.com/questions/7478366/create-dynamic-urls-in-flask-with-url-for
 #https://github.com/vimalloc/flask-jwt-extended/issues/175
+#https://stackoverflow.com/questions/9825796/how-to-make-text-vertically-and-horizontally-center-in-an-html-page
+#https://stackoverflow.com/questions/8814472/how-to-make-an-html-back-link
+
 
 
 from mysql import connector
